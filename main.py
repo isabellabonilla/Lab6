@@ -33,3 +33,16 @@ if __name__ == '__main__':
 
         elif user_input == "3":
             run = False
+def decoder(password):
+   int_password = int(password)
+   decoded_password = ""
+   for x in int_password:
+       if 3 <= x < 9:
+           decoded_password += str(x - 3)
+       elif x == 0:
+           decoded_password += "7"
+       elif x == 1:
+           decoded_password += "8"
+       elif x == 2:
+           decoded_password += "9"
+   return decoded_password
