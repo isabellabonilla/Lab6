@@ -4,7 +4,7 @@ def encode(password):
     new_password = ''
 
     for value in password:
-        new_password = new_password + str((int(value) + 3))
+        new_password = new_password + str((int(value) + 3) % 10)
 
     return new_password
 
