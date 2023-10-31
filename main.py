@@ -27,9 +27,9 @@ if __name__ == '__main__':
             encoded_pass = encode(password)
             print("Your password has been encoded and stored!")
 
-        elif user_input == '2':
+        elif user_input == "2":
             decoded_pass = decode(encoded_pass)
-            print(f"The encoded password is {decoded_pass}, and the original password is {encoded_pass}.")
+            print(f"The encoded password is {encoded_pass}, and the original password is {decoded_pass}.")
 
-        elif user_input == '3':
+        elif user_input == "3":
             run = False
